@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="MIRE: Matched Implicit Neural Representations">
+  <meta name="keywords" content="INR, Implicit Neural Representations, Activation Functions">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MIRE: Matched Implicit Neural Representations</title>
+  <link rel="icon" href="./static/images/trans_jhu_web.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1"><span class="dnerf">MIRE:</span> Matched Implicit Neural Representations</h1>
+
+      <p class="is-size-5 mt-3">
+        <span><a href="#">Dhananjaya Jayasundara</a>, </span>
+        <span><a href="#">Heng Zhao</a>, </span>
+        <span><a href="#">Demetrio Labate</a>, </span>
+        <span><a href="#">Vishal M. Patel</a>
+      </p>
+
+      <p class="is-size-5 mb-4">Johns Hopkins University, University of Houston</p>
+
+      <div class="buttons is-centered">
+        <a href="#" class="button is-dark is-rounded">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Paper</span>
+        </a>
+        <a href="#" class="button is-dark is-rounded">
+          <span class="icon"><i class="ai ai-arxiv"></i></span>
+          <span>arXiv</span>
+        </a>
+        <a href="#" class="button is-dark is-rounded">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>Code</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Implicit Neural Representations (INRs) are continuous function learners for conventional digital signal representations.
+            With the aid of positional embeddings and/or exhaustively fine-tuned activation functions, INRs have surpassed many
+            limitations of traditional discrete representations. However, existing works use a fixed activation function throughout the INR,
+            which limits adaptability to the signal. We hypothesize that this restricts representation power and generalization.
+            We introduce <em>MIRE</em>, a method to match activation functions per layer using dictionary learning. Our activation
+            dictionary includes Raised Cosines (RC), Root Raised Cosines (RRC), Prolate Spheroidal Wave Function (PSWF), Sinc,
+            Gabor Wavelet, Gaussian, and Sinusoidal. MIRE improves INR performance across tasks such as image representation,
+            inpainting, 3D shape representation, novel view synthesis, and super-resolution—while removing the need for exhaustive
+            activation parameter searches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">How MIRE Works</h2>
+        <figure class="image is-inline-block">
+          <img src="./static/images/activation_dict_f.png" alt="MIRE Pipeline" style="max-width: 95%;">
+          <figcaption class="has-text-justified mt-3" style="font-size: 1rem; line-height: 1.5;">
+            <strong>Illustration of MIRE:</strong> Existing INRs lack the capacity to fully adapt to a given signal and capture its intrinsic characteristics,
+            as they often rely on predetermined activation function parameters that are not specifically tailored to the signal being
+            converted to an implicit representation. To dynamically create an INR that truly understands the given explicit signal,
+            MIRE leverages a dictionary of activation atoms to identify the most suitable activation sequence for each signal.
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-4">BibTeX</h2>
+    <pre><code>Coming soon...</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p style="font-size: 12px;">
+      Acknowledgement: The website template is adapted from <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
